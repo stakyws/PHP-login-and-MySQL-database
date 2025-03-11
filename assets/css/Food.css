@@ -1,0 +1,568 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* *************** div1 *************** */
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+header{
+    background-image: 
+    linear-gradient(to right, #2120209c 60%,#412d2d49),
+    url("img/home_bg.jpeg");
+    background-repeat:no-repeat; /* جعل الصوره لا تتكرر */
+    background-size: cover ;
+    background-position:center;
+    height: 100vh;
+    width: 100%;
+    /*height: 603px;*/
+
+}
+.container ul li a{
+    color: white;
+    text-decoration: none;
+}
+.container img{
+    width: 110px;
+    margin-left: 40px;
+}
+
+.container ul{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3px;
+}
+
+.container ul a{
+    border-bottom: 2px solid transparent;
+}
+.container ul a:hover{
+    border-bottom: 2px solid #f3db05;
+}
+/* *************** div1 *************** */
+
+
+/* *************** div2 *************** */
+.content{
+    width: 100%;
+    height: 83%;
+    padding-top: 13%;
+    /*display: flex;
+    flex-direction: column; /* تخلي كل العناصر التي تحتوي اي شيئ كلها تحت بعظ بشكل مرتب 
+    justify-content: center;
+    align-items: center;*/
+
+
+}
+.content h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.text-span{
+    color: #f35b3f;
+}
+.content .p1{
+    text-transform: capitalize; /* جعل كل حرف من كل كلمه كبير اي كابيتل */
+    color: white;
+    text-align: center;
+    margin-top: 1%;
+
+    letter-spacing: 2px; /* عمل مسافه بين النصوص */
+}
+/* *************** BUTTON *************** */
+button{
+    color: white;
+    border-radius: 15px;
+    border-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.5s ease-in-out; /* عنصر يجعل ضهور البوتون عند طرح المواس عليه بشكل سلس */
+    cursor: pointer;
+    padding: 15px 15px;
+    margin-top: 2%;
+    font-size: 20px;
+}
+.button-1{
+    padding: 15px 15px;
+    margin-top: 2%;
+    margin-left: 548px;
+    font-size: 20px;
+
+    color: white;
+    border-radius: 15px;
+    border-color: white;
+    background-color: transparent;
+
+    transition: 0.5s ease-in-out; /* عنصر يجعل ضهور البوتون عند طرح المواس عليه بشكل سلس */
+    cursor: pointer;
+   
+}
+
+.button-1:hover,
+.button-2:hover{
+    color: white;
+    border-color: transparent;
+    background-color: #f35b3f;
+}
+/* *************** BUTTON *************** */
+
+/* *************** about *************** */
+
+.history,
+#offers .history
+{
+    width: 79%;
+    margin: auto;
+}
+#about .history
+{
+    background-color: #ffffff;
+}
+#about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+#about .title,
+#offers .title,
+#menu .title,
+#gallery h2
+{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.title h2,
+#gallery h2
+{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.title h2{
+    color: black;
+}
+#gallery h2{
+    color: #ffffff;
+}
+.history .title p{
+    font-size: 14px;
+    color:#9a9a9a;
+    font-weight: 600;
+}
+
+.about-history{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-history p{
+    font-size: 16px;
+    color: #9a9a9a;
+
+    text-transform: capitalize; /* جعل كل حرف من كل كلمه كبير اي كابيتل */
+    letter-spacing: 1px; /* عمل مسافه بين النصوص */
+    margin-right: 7rem;
+    line-height: 1.8;
+}
+.about-history img{
+    width: 450px;
+}
+.button-2{
+    background-color: #383848;
+    border-color: transparent;
+    margin-top: 6%;
+}
+/* *************** about *************** */
+
+/* *************** offers *************** */
+#offers{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    
+    background: url("./img/offer-background.jpg") center center/cover fixed;
+
+}
+#offers .offers-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#offers .history .title h2{
+    color: #f35b3f;
+    margin-top: 16px;
+}
+#offers .history .title .pp{
+    color: #ffffff;
+    font-size: 14px;
+}
+.offers-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    
+}
+.offers-items img{
+    width: 60%;
+   
+}
+.offers-items h3{
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 500;
+}
+#offers .offers-items p{
+    color: white;
+    font-size: 10px;
+    padding: 0 50px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    
+}
+#offers .offers-items .text-span{
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 5px;
+}
+/* *************** offers *************** */
+
+/* *************** Menu *************** */
+
+#menu{
+    background: #f4f4f4;
+    padding: 5rem 0;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu .menu-items .menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+#menu .menu-items .menu-item img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+#menu .menu-items .menu-item h3{
+    text-transform: uppercase; /* جعل كل الحروف الانجليزيه كبيره اي كبيتل */
+    border-bottom: 1px dashed #9a9a9a;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 700;
+    
+}
+#menu .menu-items .menu-item span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 700;
+}
+
+#menu .button-3{
+    /* جعل البوتوون في المنتصف */
+    display: block;
+    margin: auto;
+    /* جعل البوتوون في المنتصف */
+
+    margin-top: 8%;
+    background:url("img/daytime_bg.jpeg") center center/cover fixed;
+    border-color: transparent;
+    transition: 0.5s ease-in-out;
+   
+}
+#menu .button-3:hover{
+    border-color: black;
+    color: black;
+    background: transparent;
+    transition: 0.5s ease-in-out;
+}
+/* *************** Menu *************** */
+
+/* *************** timer *************** */
+
+#timer{
+    background: url("./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
+    height: 40vh;
+    color: white;
+}
+
+#timer .time-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#timer .time-item{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#timer .time-item img{
+    padding: 20px;
+}
+#timer .time-item h3
+{
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+}
+/* *************** timer *************** */
+
+/* *************** Gallery *************** */
+#gallery{
+    background: url("./img/offer-background.jpg") center center/cover fixed;
+    padding: 8rem 0 6rem;
+}
+#gallery .img-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#gallery .img-gallery img{
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8; /* جعل الصوره شفافه قليلا اي جعلها غير واضحه */
+}
+#gallery .img-gallery img:hover{
+    opacity: 1;
+}
+
+/* *************** Gallery *************** */
+
+/* *************** Contact *************** */
+#contact{
+    padding: 5rem 0;
+    background-color: #faf5f5;
+}
+
+#contact .contact-content{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contact .contact-content form{
+    margin: 0 20px;
+}
+#contact .contact-content form input,
+#contact .contact-content form textarea
+{
+    display: block;
+    width: 400px;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    background-color: #e3e2dd;
+}
+#contact .contact-content form input:hover{
+    border-color: transparent;
+    border: none;
+}
+
+#contact .contact-content form textarea:hover{
+    border-color: transparent;
+    border: none;
+}
+#contact .contact-content form button{
+    padding: 10px 15px;
+    margin-top: 2%;
+    font-size: 15px;
+    background-color: #f35b3f;
+    color: #ffffff;
+    border-color: transparent;
+
+    transition: 0.5s ease-in-out;
+}
+#contact .contact-content form button:hover{
+    border-color: black;
+    color: black;
+    background-color: transparent;
+}
+ .contact-info  svg{
+    width: 20px;
+    height: 15px;
+    border-radius: 40%;
+    transition: 0.5s ease-in-out;
+}
+.contact-info a svg{
+    width: 40px;
+    height: 35px;
+    transition: 0.5s ease-in-out;
+    margin-top: 1rem;
+}
+#contact .contact-info div{
+    margin: 30px 0;
+    line-height: 1.7;
+}
+#contact .contact-info h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+   
+}
+#contact .contact-info p{
+    color: #9a9a9a;
+    font-size: 15px;
+}
+/* *************** Contact *************** */
+
+/* *************** Footer *************** */
+
+#footer{
+    height: 20%;
+    padding: 10px 10px;
+    background-image: url(img/offer-background.jpg);
+    text-align: center;
+    
+}
+
+#footer p{
+    color: #ffffff;
+    font-size: 14px;
+}
+/* *************** Footer *************** */
+
+@media (max-width: 1000px) {
+    #home img {
+      margin-left: 20px;
+    }
+  
+     ul li a {
+      padding: 10px;
+    }
+  
+    header .content h1 {
+      font-size: 28px;
+    }
+     
+    .content form button{
+        margin-top: 10px;
+        margin-left: 500px;
+    } 
+  
+    #about {
+      height: auto;
+      padding: 4rem 2rem;
+    }
+  
+    #about .about-history p {
+      margin-right: 2rem;
+    }
+  
+    #about img {
+      width: 250px;
+    }
+  
+    #offers .offers-items img {
+      width: 30px;
+    }
+  
+    #offers .offers-items h3 {
+      font-size: 10px;
+    }
+    
+  
+    #menu .menu-items {
+      display: block;
+    }
+  
+    #contact .contact-content {
+      flex-direction: column;
+    }
+  
+    /* Mobile Devices */
+    @media (max-width: 600px) {
+      #home  {
+        flex-direction: column;
+      }
+  
+      #home img {
+        margin-bottom: 20px;
+      }
+  
+      header .content h1 {
+        font-size: 18px;
+      }
+  
+      header .content p {
+        font-size: 14px;
+      }
+    
+  
+      #about .about-history {
+        flex-direction: column;
+      }
+  
+      #about .about-history a {
+        margin: 2rem 0;
+      }
+  
+      #about img {
+        display: none;
+      }
+  
+      #offers {
+        height: auto;
+        padding: 30px 10px;
+      }
+  
+      #offers .offers-items {
+        flex-direction: column;
+      }
+  
+      #menu .menu-items .menu-item {
+        margin: 20px 10px;
+      }
+  
+      #daytime .daytime-items {
+        display: block;
+        height: auto;
+        padding: 30px 0;
+      }
+  
+      #daytime .daytime-items .daytime-item {
+        margin-top: 20px;
+      }
+  
+      #contact .contact-info,
+      form {
+        width: 80%;
+      }
+    }
+  }

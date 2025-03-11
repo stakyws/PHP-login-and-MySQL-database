@@ -1,0 +1,241 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  /* background: linear-gradient(to right, #ffffffa8 40%,#0a0101af);  */
+  background-color: #1c1b1b;
+  /* background-image: 
+    linear-gradient(to right, #2120200b 60%,#412d2d08); */
+}
+
+/* Additional Styles */
+
+header .hed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 30px;
+  background-color: transparent;
+  color: #f73f1f;
+}
+
+.logo .txt_1 {
+  font-family: "Snap ITC", cursive;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff6347;
+  letter-spacing: 2px;
+  text-align: center;
+  border-bottom: 3px solid #ff6347;
+  /* background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #f35b3f , #0c0303c3); */
+}
+ul {
+  width: 30%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul a {
+  color: #f9f8f7;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: 700;
+}
+ul a:hover {
+  border-bottom: 2px solid #ff6347;
+}
+#login {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt_2 {
+  font-size: 37px;
+  /* background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #000000, #ff0000fc); */
+  color: #f35b3f;
+  padding-bottom: 2rem;
+}
+span {
+  color: white;
+}
+
+.login1-container,
+.login2-container,
+.login3-container {
+  background-color: #1c1b1b;
+  /* background: linear-gradient(to right, #ffffffa8 40% ,#0a0101af );  */
+  padding: 50px 20px;
+  border-radius: 20px;
+
+  width: 30%;
+  text-align: center;
+  animation: fadeIn 1s ease;
+  transition: box-shadow 0.3s;
+}
+
+.login1-container:hover,
+.login2-container:hover,
+.login3-container:hover {
+  border-color: #f35b3f;
+  box-shadow: 0 0 0 0.25rem #f35a3fa4;
+}
+.password-container {
+  position: relative;
+  width: 100%;
+}
+/* .password-container {
+  position: relative;
+  width: 10%;
+  margin-bottom: 10px;
+} */
+.password-container .toggle-password {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-70%);
+  cursor: pointer;
+  color: white;
+  /* background-color: white; */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-color: #888;
+  border: 1px solid #888;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  background-color: #444;
+  outline: none;
+  transition: all 0.3s;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: #888;
+}
+.login2-container p {
+  color: #f35b3f;
+  font-size: 10px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #f35b3f;
+  box-shadow: 0 0 0 0.25rem #f35a3fa4;
+}
+
+.login3-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #888;
+  transition: background-color 0.3s;
+}
+.image:hover {
+  border-color: #f35b3f;
+  box-shadow: 0 0 0 0.25rem #f35a3fa4;
+}
+.login3-container .img {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.login3-container label[for="img"],
+.btn {
+  padding: 11px 25px;
+  background-color: #f73f1f;
+  border: 2px solid white;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover,
+.login3-container label[for="img"]:hover {
+  background-color: #f75134;
+}
+
+/* CSS تعديلات لجعل الموقع متجاوباً */
+@media only screen and (max-width: 600px) {
+  header .hed {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  #login {
+    margin-top: 3rem;
+  }
+
+  .login1-container,
+  .login2-container {
+    padding: 40px 20px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"] {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.password-container {
+  position: relative;
+  width: fit-content;
+}
+.password-container input {
+  padding-right: 30px;
+}
+.password-container::after {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+/*#pas{
+    cursor: pointer;
+    padding-left: -50px;
+    display: none;
+}*/
